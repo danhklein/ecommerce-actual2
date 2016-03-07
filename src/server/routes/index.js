@@ -2,16 +2,16 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index1', { title: 'Fine Wine' });
+  res.render('index', { title: 'Fine Wine' });
 });
 
 
-router.get('/products/', function(req, res, next) {
+router.get('/products', function(req, res, next) {
   res.render('product', { title: 'Our Finest Wares' });
 });
 
 router.get('/products/:id', function(req, res, next) {
-  res.render('product', { title: {{wine.name}} });
+  res.render('product', { title: 'This wine'});
 });
 
 router.get('/checkout', function(req, res, next) {
