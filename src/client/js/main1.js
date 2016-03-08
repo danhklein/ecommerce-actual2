@@ -3,7 +3,7 @@
 $(document).on('ready', function() {
   console.log('sanity check');
 
-  Stripe.setPublishableKey('pk_test_PVOKuxQxbdS8vjKTWqKeIo0H');
+  // Stripe.setPublishableKey('pk_test_PVOKuxQxbdS8vjKTWqKeIo0H');
   // var options = { $AutoPlay: true };
   // var jssor_slider1 = new $JssorSlider$('slider1_container', options);
 
