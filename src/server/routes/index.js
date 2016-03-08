@@ -10,6 +10,7 @@ router.get('/products', function(req, res, next) {
   res.render('product', { title: 'Our Finest Wares' });
 });
 
+
 router.get('/products/:id', function(req, res, next) {
   res.render('product', { title: 'This wine'});
 });
