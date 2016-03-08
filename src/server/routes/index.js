@@ -10,9 +10,9 @@ router.get('/products/', function(req, res, next) {
   res.render('product', { title: 'Our Finest Wares' });
 });
 
-router.get('/products/:id', function(req, res, next) {
-  res.render('product', { title: {{wine.name}} });
-});
+// router.get('/products/:id', function(req, res, next) {
+//   res.render('product', { title: {{wine.name}} });
+// });
 
 router.get('/checkout', function(req, res, next) {
   res.render('checkout', { title: 'Checkout' });
