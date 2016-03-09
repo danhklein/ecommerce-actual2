@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
     table.boolean('admin');
 
 
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {
