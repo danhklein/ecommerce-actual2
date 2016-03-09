@@ -7,6 +7,26 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var swig = require('swig');
 
+//Automatically seed data while in Development
+function checkTable (tableName) {
+  return knex().select().table(tableName);
+  }
+}
+
+if (NODE_ENV = "Development" ) {
+  checkTable(wines)
+  .then(function(data){
+    res.body({
+      result: data
+      if (!!result.length) {
+        knex.seed.run()
+        .then(function() {
+          console.log("data seeded")
+        }
+      }
+    })
+  }
+}
 
 // *** routes *** //
 var routes = require('./routes/index.js');
