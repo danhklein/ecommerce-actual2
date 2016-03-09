@@ -6,8 +6,6 @@ exports.up = function(knex, Promise) {
     table.string('Email');
     table.string('password');
     table.boolean('admin');
-
-
   })
 };
 
