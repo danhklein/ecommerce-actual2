@@ -10,7 +10,7 @@ exports.up = function(knex, Promise) {
     table.decimal('price');
 
 
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {

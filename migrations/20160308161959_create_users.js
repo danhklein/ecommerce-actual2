@@ -6,8 +6,12 @@ exports.up = function(knex, Promise) {
     table.string('Email');
     table.string('password');
     table.boolean('admin');
+
   })
+
 };
+
+
 
 exports.down = function(knex, Promise) {
   return knex.schema.dropTable('users');

@@ -24,7 +24,12 @@ router.get('/invoice', function(req, res, next) {
 
 });
 
+router.post('/checkout',function (req, res, next) {
+  var body = req.body;
+  res.send('form': body)
 
+
+}
 
 
 
